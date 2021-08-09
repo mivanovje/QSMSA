@@ -1,13 +1,10 @@
 package mgivanov.qsmsa.util.aspect;
 
-import mgivanov.qsmsa.model.Greeting;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
 import java.util.Arrays;
 import java.util.stream.Collectors;
 

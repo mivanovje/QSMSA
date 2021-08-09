@@ -1,8 +1,7 @@
 package mgivanov.qsmsa.rest;
 
-import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
+import java.util.concurrent.atomic.AtomicLong;
 import mgivanov.qsmsa.model.Greeting;
 import mgivanov.qsmsa.util.annotation.LogInOutParameters;
 import org.springframework.web.bind.annotation.GetMapping;
