@@ -1,4 +1,4 @@
-package mgivanov.qsmsa.entity;
+package mgivanov.qsmsa.model;
 
 public class Greeting {
 
