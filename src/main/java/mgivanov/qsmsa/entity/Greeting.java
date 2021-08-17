@@ -3,6 +3,7 @@ package mgivanov.qsmsa.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "greeting")
 public class Greeting {
 
     @Id
