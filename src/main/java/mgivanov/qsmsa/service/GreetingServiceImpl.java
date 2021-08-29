@@ -4,9 +4,12 @@ import mgivanov.qsmsa.entity.Greeting;
 import mgivanov.qsmsa.exception.ElementNotFoundException;
 import mgivanov.qsmsa.repository.GreetingRepository;
 import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
+@Transactional
 public class GreetingServiceImpl implements GreetingService{
     private final GreetingRepository greetingRepository;
 
