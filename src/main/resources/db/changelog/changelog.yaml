@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-createtable.yaml
+  - changeSet:
+      id: 1
+      author: mgivanov
+      context: dev or test
+      changes:
+        - createTable:
+            tableName: greeting
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: content
+                  type: varchar(50)
+  - includeAll:
+      path: db/changelog/data/

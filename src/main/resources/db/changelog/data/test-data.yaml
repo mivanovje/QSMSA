@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: mgivanov
+      context: test
+      comment: "Create test entities in h2"
+      changes:
+        - insert:
+            tableName: greeting
+            columns:
+              - column:
+                  name: content
+                  value: "Hello, Max!"
+        - insert:
+            tableName: greeting
+            columns:
+              - column:
+                  name: content
+                  value: "Hello, Peter!"
